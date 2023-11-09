@@ -16,6 +16,7 @@ Filter the aforementioned file to get a list of players in each region with empe
 >[!NOTE]
 >This process will take an absurd amount of time since it will do an API call for each player in each file.  
 >You can reduce the time it takes by increasing the number of cores allocated to the task
+
 >[!Warning]
 >Increasing the number of cores might cause problems in the final file due to multiple cores trying to write on the same file simultaneously.  
 >Feel free to modify the code so that each worker writes in a different file and merge all files at the end
